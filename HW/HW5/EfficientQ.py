@@ -63,9 +63,9 @@ def main():
     print(groceryLine.size())  # expect: 2
     groceryLine.enqueue()
     groceryLine.enqueue()
-    print(groceryLine.size()) # expect: 4
+    print(groceryLine.size())  # expect: 4
 
-    print(groceryLine.is_empty()) # expect: False
+    print(groceryLine.is_empty())  # expect: False
     groceryLine.dequeue()
     groceryLine.dequeue()
     groceryLine.dequeue()
@@ -75,6 +75,8 @@ def main():
     groceryLine.enqueue()
     groceryLine.enqueue()
     groceryLine.enqueue()
-    print(groceryLine.currentQueue()) # expect: {6: 6, 7: 7, 8: 8} (ticket numbers should not reset)
+    # expect: {6: 6, 7: 7, 8: 8} (ticket numbers should not reset)
+    print(groceryLine.currentQueue())
+
 
 main()

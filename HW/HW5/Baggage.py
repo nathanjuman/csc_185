@@ -58,16 +58,18 @@ def compute_order(weightlist, maxweight):
     if len(bag_order) > 0:
         container.push(bag_order)
 
-    return container    
+    return container
 
 # purpose: builds a string containing the loading order for the aircraft
 # inputs: order - a stack with containers in the aircraft loading order
 # output: Returns a string containing the aircraft loading order
+
+
 def str_order(order):
     order_str = ""
     order_list = []
     while order.size() > 0:
-        order_list += order.pop()   
+        order_list += order.pop()
     order_str += ' '.join(order_list)
     return order_str
 

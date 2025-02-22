@@ -68,8 +68,10 @@ def compute_order(weightlist, maxweight):
 def str_order(order):
     order_str = ""
     order_list = []
+
     while order.size() > 0:
         order_list += order.pop()
+
     order_str += ' '.join(order_list)
     return order_str
 
